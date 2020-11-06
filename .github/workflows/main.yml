@@ -34,5 +34,5 @@ jobs:
       with:
         author_name: Santiago Gonzalez
         message: "GitHub traffic"
-        add: "./main/*"
+        add: "./CDP-retail/*"
         ref: "main"  # commits to branch "traffic"
