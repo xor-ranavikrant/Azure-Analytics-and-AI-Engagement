@@ -7,7 +7,7 @@ name: CI
 on:
   schedule: 
     # runs once a week on sunday
-    - cron: "* * * *"
+    - cron: "* * * * *"
     
 jobs:
   # This workflow contains a single job called "traffic"
