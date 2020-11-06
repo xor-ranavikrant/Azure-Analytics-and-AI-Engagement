@@ -1,9 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the main branch
 on:
   schedule: 
     # runs once a week on sunday
@@ -20,7 +14,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
       with:
-        ref: "main"
+        ref: "traffic"
     
     # Calculates traffic and clones and stores in CSV file
     - name: GitHub traffic 
@@ -34,5 +28,5 @@ jobs:
       with:
         author_name: Santiago Gonzalez
         message: "GitHub traffic"
-        add: "./CDP-retail/*"
-        ref: "main"  # commits to branch "traffic"
+        add: "./traffic/*"
+        ref: "traffic"  # commits to branch "traffic"
